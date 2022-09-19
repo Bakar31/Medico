@@ -8,7 +8,9 @@ intents:
   - sick
   - fever_symptoms
   - less_than_7
+  - more_than_7
   - all_day
+  - evening
   - bot_challenge
 
 responses:
@@ -31,13 +33,16 @@ responses:
   - text: "Does the fever associated with chills and rigor?"
 
   utter_viral_fever:
-  - text: "Yours sysmtoms indicating viral fever. Please contact a doctor and take proper medicine."
+  - text: "Your sysmtoms indicating viral fever. Please contact a doctor and take proper medicine."
+
+  utter_TB:
+   - text: "Your sysmtoms indicating TB. Please contact a doctor and take proper medicine."
 
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, created by Abu Bakar Siddik."
 
 session_config:
   session_expiration_time: 60
