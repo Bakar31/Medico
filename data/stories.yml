@@ -20,6 +20,8 @@ stories:
   - action: utter_viral_fever
   - intent: bot_challenge
   - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
 
 
 - story: fever-2
@@ -40,3 +42,5 @@ stories:
   - action: utter_TB
   - intent: bot_challenge
   - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
