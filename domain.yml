@@ -39,7 +39,7 @@ responses:
    - text: "Your sysmtoms indicating TB. Please contact a doctor and take proper medicine."
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Take care"
 
   utter_iamabot:
   - text: "I am a bot, created by Abu Bakar Siddik."
