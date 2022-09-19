@@ -17,6 +17,18 @@ nlu:
     - temeperature high
     - i am feeling feverish
 
+- intent: all_day
+  examples: |
+    - all day
+    - all time
+    - 24/7
+
+- intent: evening
+  examples: |
+    - at night
+    - at evening
+    - evening
+
 - intent: less_than_7
   examples: |
     - less than 7 days
@@ -33,6 +45,18 @@ nlu:
     - 1 day
     - 6 day
     - six days
+
+- intent: more_than_7
+  examples: |
+    - more than 7 days
+    - 7 days
+    - 10 days
+    - 15 days
+    - 1 month
+    - one month
+    - 2 month
+    - two month
+
 
 - intent: greet
   examples: |
