@@ -1,0 +1,20 @@
+version: "3.1"
+
+stories:
+
+- story: fever-1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_symptoms
+  - intent: fever_symptoms
+  - action: utter_fever_how_long
+  - intent: less_than_7
+  - action: utter_when_feel_fever
+  - intent: all_day
+  - action: utter_temperature
+  - intent: deny
+  - action: utter_chills_and_rigor
+  - intent: deny
+  - action: utter_viral_fever

@@ -1,0 +1,91 @@
+version: "3.1"
+
+nlu:
+
+- intent: sick
+  examples: |
+    - i am not well
+    - i am sick
+    - feeling sick
+    - can i get some medical advice
+    - i am unwell
+
+- intent: fever_symptoms
+  examples: |
+    - i am having fever
+    - fever
+    - temeperature high
+    - i am feeling feverish
+
+- intent: less_than_7
+  examples: |
+    - less than 7 days
+    - for 4 days
+    - for three days
+    - for 3 days
+    - for 2 days
+    - for two days
+    - for 1 day
+    - one day
+    - from this morning
+    - for 5 days
+    - five days
+    - 1 day
+    - 6 day
+    - six days
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,44 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - sick
+  - fever_symptoms
+  - less_than_7
+  - all_day
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you feeling today?"
+
+  utter_symptoms:
+  - text: "Can you please tell me your symptoms?"
+
+  utter_fever_how_long:
+  - text: "Are you feeling fever for less than 7 days or more than 7 days?"
+
+  utter_when_feel_fever:
+  - text: "You do you feel fever mostly? All day long or in the evening?"
+
+  utter_temperature:
+  - text: "Did you measure your body temperature?"
+
+  utter_chills_and_rigor:
+  - text: "Does the fever associated with chills and rigor?"
+
+  utter_viral_fever:
+  - text: "Yours sysmtoms indicating viral fever. Please contact a doctor and take proper medicine."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
