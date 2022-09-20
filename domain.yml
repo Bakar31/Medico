@@ -21,10 +21,20 @@ responses:
   - text: "Can you please tell me your symptoms?"
 
   utter_fever_how_long:
-  - text: "Are you feeling fever for less than 7 days or more than 7 days?"
+  - text: "For how long you are feeling fever?"
+    buttons:
+      - title: "Less than 7 days"
+        payload: "/less_than_7"
+      - title: "More than 7 days"
+        payload: "/more_than_7"
 
   utter_when_feel_fever:
-  - text: "You do you feel fever mostly? All day long or in the evening?"
+  - text: "You do you feel fever mostly?"
+    buttons:
+      - title: "All day"
+        payload: "/all_day"
+      - title: "evening"
+        payload: "/evening"
 
   utter_temperature:
   - text: "Did you measure your body temperature?"
