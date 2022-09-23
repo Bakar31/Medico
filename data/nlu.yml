@@ -10,6 +10,24 @@ nlu:
     - can i get some medical advice
     - i am unwell
 
+- intent: headache_symptoms
+  examples: |
+    - headache
+    - pain in the head
+    - bad headache
+    - head pain
+    - head and neck pain
+
+- intent: headache_start
+  examples: |
+    - this morning
+    - for 2 hours
+    - 2 hours
+    - this evening
+    - last night
+    - last morning
+    - yesterday
+
 - intent: fever_symptoms
   examples: |
     - i am having fever

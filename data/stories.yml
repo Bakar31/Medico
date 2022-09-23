@@ -2,6 +2,23 @@ version: "3.1"
 
 stories:
 
+- story: headache-1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_symptoms
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: deny
+  - action: utter_tension_headache_for_less_sleep
+
 - story: fever-1
   steps:
   - intent: greet
@@ -44,3 +61,19 @@ stories:
   - action: utter_iamabot
   - intent: goodbye
   - action: utter_goodbye
+
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

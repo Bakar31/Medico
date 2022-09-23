@@ -7,6 +7,8 @@ intents:
   - deny
   - sick
   - fever_symptoms
+  - headache_symptoms
+  - headache_start
   - less_than_7
   - more_than_7
   - all_day
@@ -19,6 +21,36 @@ responses:
 
   utter_symptoms:
   - text: "Can you please tell me your symptoms?"
+
+  utter_headache_how_long:
+  - text: "When the headache started ?"
+
+  utter_severe_headache:
+  - text: "Do you feel severe pain?"
+    buttons:
+      - title: "Yes"
+        payload: "/affirm"
+      - title: "No"
+        payload: "/deny"
+
+  utter_feel_nauseous:
+  - text: "Do you feel nauseous?"
+    buttons:
+      - title: "Yes"
+        payload: "/affirm"
+      - title: "No"
+        payload: "/deny"
+
+  utter_enough_sleep:
+  - text: "Do you get enough sleep?"
+    buttons:
+      - title: "Yes"
+        payload: "/affirm"
+      - title: "No"
+        payload: "/deny"
+
+  utter_tension_headache_for_less_sleep:
+  - text: "Don't worry! Get enough sleep you will be all right. If you want, you can take Paracetamol."
 
   utter_fever_how_long:
   - text: "For how long you are feeling fever?"
