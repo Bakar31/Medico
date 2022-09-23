@@ -16,8 +16,3 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-
-- rule: ask symptoms anytime the user says sick
-  steps:
-  - intent: sick
-  - action: utter_symptoms
