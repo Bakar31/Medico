@@ -49,6 +49,53 @@ stories:
   - intent: deny
   - action: utter_tension_headache_for_less_sleep
 
+- story: headache-2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_symptoms
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: affirm
+  - action: utter_in_holiday
+  - intent: affirm
+  - action: utter_sleep_lot
+  - intent: affirm
+  - action: utter_tension_headache_for_more_sleep
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: headache-2.1
+  steps:
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: affirm
+  - action: utter_in_holiday
+  - intent: affirm
+  - action: utter_sleep_lot
+  - intent: affirm
+  - action: utter_tension_headache_for_more_sleep
+
+
+
+
+
+
+
+
 - story: fever-1
   steps:
   - intent: greet

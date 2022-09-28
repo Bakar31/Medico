@@ -9,6 +9,11 @@ nlu:
     - feeling sick
     - can i get some medical advice
     - i am unwell
+    - feeling unhealty
+    - feeling dizzy
+    - not good
+    - in pain
+    - not in good shape
 
 - intent: headache_symptoms
   examples: |
@@ -21,6 +26,12 @@ nlu:
 - intent: headache_start
   examples: |
     - this morning
+    - 9 am
+    - 10 am
+    - 9:30 am
+    - 5 am
+    - 8 pm
+    - 7 pm
     - for 2 hours
     - 2 hours
     - this evening

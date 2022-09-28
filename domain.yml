@@ -49,8 +49,27 @@ responses:
       - title: "No"
         payload: "/deny"
 
+  utter_in_holiday:
+  - text: "are you enjoyin holiday?"
+    buttons:
+      - title: "Yes"
+        payload: "/affirm"
+      - title: "No"
+        payload: "/deny"
+
+  utter_sleep_lot:
+  - text: "Are you sleeping a lot?"
+    buttons:
+      - title: "Yes"
+        payload: "/affirm"
+      - title: "No"
+        payload: "/deny"
+
   utter_tension_headache_for_less_sleep:
   - text: "Don't worry! Get enough sleep you will be all right. If you want, you can take Paracetamol."
+
+  utter_tension_headache_for_more_sleep:
+  - text: "Don't worry! You are feeling released after stessful time. Don't sleep too much. If you want, you can take Paracetamol."
 
   utter_fever_how_long:
   - text: "For how long you are feeling fever?"

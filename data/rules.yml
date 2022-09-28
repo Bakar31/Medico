@@ -12,6 +12,11 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: Say symptoms anytime the user says sick
+  steps:
+  - intent: sick
+  - action: utter_symptoms
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
