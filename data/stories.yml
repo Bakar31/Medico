@@ -2,7 +2,7 @@ version: "3.1"
 
 stories:
 
-- story: headache for less sleep
+- story: headache for less sleep - 1
   steps:
   - intent: greet
   - action: utter_greet
@@ -49,7 +49,7 @@ stories:
   - intent: deny
   - action: utter_tension_headache_for_less_sleep
 
-- story: headache for much sleep and relax
+- story: headache for much sleep and relax - 2
   steps:
   - intent: greet
   - action: utter_greet

@@ -13,6 +13,7 @@ intents:
   - more_than_7
   - all_day
   - evening
+  - appriciation
   - out_of_scope
   - bot_challenge
 
@@ -115,6 +116,10 @@ responses:
 
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+# general
+  utter_appriciation_reply:
+  - text: "I am created for this. I am just doing my job."
 
   utter_goodbye:
   - text: "Take care"

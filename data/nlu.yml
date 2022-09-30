@@ -38,6 +38,7 @@ nlu:
     - last night
     - last morning
     - yesterday
+    - today
 
 - intent: fever_symptoms
   examples: |
@@ -102,6 +103,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - hi medico
+    - docbot
+    - hey doctor bot
 
 - intent: goodbye
   examples: |
@@ -134,6 +138,16 @@ nlu:
     - don't like that
     - no way
     - not really
+
+- intent: appriciation
+  examples: |
+    - thanks
+    - thank  you
+    - gracias
+    - much appricate it.
+    - It's a relief
+    - you are good
+    - thank you very much
 
 
 - intent: out_of_scope
