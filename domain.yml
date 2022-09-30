@@ -13,7 +13,11 @@ intents:
   - more_than_7
   - all_day
   - evening
+  - out_of_scope
   - bot_challenge
+
+actions:
+  - action_custom_fallback
 
 responses:
   utter_greet:
@@ -23,7 +27,7 @@ responses:
   - text: "Can you please tell me your symptoms?"
 
   utter_headache_how_long:
-  - text: "When the headache started ?"
+  - text: "When the headache started?"
 
   utter_severe_headache:
   - text: "Do you feel severe pain?"
@@ -71,6 +75,8 @@ responses:
   utter_tension_headache_for_more_sleep:
   - text: "Don't worry! You are feeling released after stessful time. Don't sleep too much. If you want, you can take Paracetamol."
 
+
+# fever
   utter_fever_how_long:
   - text: "For how long you are feeling fever?"
     buttons:
@@ -98,6 +104,17 @@ responses:
 
   utter_TB:
    - text: "Your sysmtoms indicating TB. Please contact a doctor and take proper medicine."
+
+
+# fallback, out of scope
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
   utter_goodbye:
   - text: "Take care"
