@@ -17,6 +17,9 @@ intents:
   - out_of_scope
   - bot_challenge
 
+entities:
+  - time
+
 actions:
   - action_custom_fallback
 

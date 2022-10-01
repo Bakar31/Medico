@@ -17,28 +17,33 @@ nlu:
 
 - intent: headache_symptoms
   examples: |
-    - headache
-    - pain in the head
-    - bad headache
-    - head pain
-    - head and neck pain
+    - i feel [headache](headache)
+    - [pain in the head](headache)
+    - [bad headache](headache)
+    - [head pain](headache)
+    - [head and neck pain](headache)
 
 - intent: headache_start
   examples: |
-    - this morning
-    - 9 am
-    - 10 am
-    - 9:30 am
-    - 5 am
-    - 8 pm
-    - 7 pm
-    - for 2 hours
+    - [morning](time)
+    - from [9 am](time)
+    - [10 am](time)
+    - from [9:30 am](time)
+    - [5 am](time)
+    - [8:15 pm](time)
+    - [7 pm](time)
+    - for [2 hours(time)]
     - 2 hours
-    - this evening
-    - last night
+    - [this evening](time)
+    - [last night](time)
     - last morning
-    - yesterday
-    - today
+    - [yesterday](time)
+    - [today](time)
+    - [today morning](time)
+
+- regex: time
+  examples: |
+    - ^(((0?[1-9]|1[012])(:[0-5][0-9])?am)|((0?[0-9]|1[012])(:[0-5][0-9])?pm))\b
 
 - intent: fever_symptoms
   examples: |
