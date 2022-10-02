@@ -84,8 +84,11 @@ responses:
   utter_goto_doc_asap:
   - text: "Go to a doctor as soon as possible."
 
+  utter_should_goto_doc:
+  - text: "You should consult a doctor."
 
-# fever
+
+#=============fever===================
   utter_fever_how_long:
   - text: "For how long you are feeling fever?"
     buttons:
@@ -115,7 +118,7 @@ responses:
    - text: "Your sysmtoms indicating TB. Please contact a doctor and take proper medicine."
 
 
-# fallback, out of scope
+# ============fallback, out of scope================
   utter_default:
   - text: Sorry I didn't get that. Can you rephrase?
 
@@ -125,7 +128,7 @@ responses:
   utter_please_rephrase:
   - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
 
-# general
+# ===================general=======================
   utter_appriciation_reply:
   - text: "I am created for this. I am just doing my job."
 

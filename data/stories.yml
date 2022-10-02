@@ -1,7 +1,7 @@
 version: "3.1"
 
 stories:
-
+#==============================================headache====================================================================
 - story: greet + sick + headache symptoms + start time + not severe + not nauseous + not enough sleep + appreciation + goodbye
   steps:
   - intent: greet
@@ -71,7 +71,7 @@ stories:
   - intent: affirm
   - action: utter_goto_doc_asap
 
-- story: headache for much sleep and relax - 2
+- story: greet + sick + headache + start time + not severe + not nauseous + enough sleep + in holiday + sleep lot + tension headache + appreciation + goodbye
   steps:
   - intent: greet
   - action: utter_greet
@@ -91,10 +91,12 @@ stories:
   - action: utter_sleep_lot
   - intent: affirm
   - action: utter_tension_headache_for_more_sleep
+  - intent: appriciation
+  - action: utter_appriciation_reply
   - intent: goodbye
   - action: utter_goodbye
 
-- story: headache-2.1
+- story: headache symptoms + headache start + not severe + not nauseous + enough sleep + in holiday + lot of sleep + tension headache
   steps:
   - intent: headache_symptoms
   - action: utter_headache_how_long
@@ -111,7 +113,55 @@ stories:
   - intent: affirm
   - action: utter_tension_headache_for_more_sleep
 
+- story: headache symptoms + headache start + not severe + not nauseous + enough sleep + in holiday + lot of sleep + tension headache
+  steps:
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: affirm
+  - action: utter_in_holiday
+  - intent: affirm
+  - action: utter_sleep_lot
+  - intent: affirm
+  - action: utter_tension_headache_for_more_sleep
 
+- story: headache symptoms + headache start + not severe + not nauseous + enough sleep + in holiday + lot of sleep + tension headache
+  steps:
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: affirm
+  - action: utter_in_holiday
+  - intent: affirm
+  - action: utter_sleep_lot
+  - intent: affirm
+  - action: utter_tension_headache_for_more_sleep
+
+- story: headache symptoms + headache start + not severe + not nauseous + enough sleep + should go to doc
+  steps:
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: affirm
+  - action: utter_should_goto_doc
+
+
+#=====================Fever=========================
 - story: fever-1
   steps:
   - intent: greet
