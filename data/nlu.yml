@@ -1,13 +1,13 @@
 version: "3.1"
 
 nlu:
-
 - intent: sick
   examples: |
     - i am not well
     - i am sick
     - feeling sick
     - can i get some medical advice
+    - i need medical attention
     - i am unwell
     - feeling unhealty
     - feeling dizzy
@@ -15,36 +15,34 @@ nlu:
     - in pain
     - not in good shape
 
+# --------------headache----------------
 - intent: headache_symptoms
   examples: |
     - i feel [headache](headache)
-    - [pain in the head](headache)
-    - [bad headache](headache)
+    - [pain in the head]headache
+    - [bad headache]headache
     - [head pain](headache)
     - [head and neck pain](headache)
-
-- intent: headache_start
-  examples: |
-    - [morning](time)
-    - from [9 am](time)
-    - [10 am](time)
-    - from [9:30 am](time)
-    - [5 am](time)
-    - [8:15 pm](time)
-    - [7 pm](time)
-    - for [2 hours(time)]
-    - 2 hours
-    - [this evening](time)
-    - [last night](time)
-    - last morning
-    - [yesterday](time)
-    - [today](time)
-    - [today morning](time)
 
 - regex: time
   examples: |
     - ^(((0?[1-9]|1[012])(:[0-5][0-9])?am)|((0?[0-9]|1[012])(:[0-5][0-9])?pm))\b
 
+- intent: headache_start
+  examples: |
+    - [7 am](time)
+    - since [8 am](time)
+    - for [2 hours](time)
+    - since [10 pm](time)
+    - this morning
+    - this evening
+    - last night
+    - last morning
+    - yesterday
+    - today
+    - today morning
+
+# --------------fever----------------
 - intent: fever_symptoms
   examples: |
     - i am having fever
@@ -92,6 +90,22 @@ nlu:
     - 2 month
     - two month
 
+
+# -----------general--------------
+- intent: introduce_botself
+  examples: |
+    - who are you?
+    - what can you do?
+    - what are your experties?
+    - introduce youself?
+    - what do you know?
+    - are you a doctor?
+    - can you help me with headache?
+    - field of experties?
+    - which problems can you solve?
+    - do you know all types of diseses?
+    - are you an expert?
+    - can I trust you?
 
 - intent: greet
   examples: |
@@ -153,6 +167,7 @@ nlu:
     - It's a relief
     - you are good
     - thank you very much
+    - great
 
 
 - intent: out_of_scope
@@ -160,6 +175,8 @@ nlu:
     - I want to order food
     - What is 2 + 2?
     - Who's the US President?
+    - I want to book a cab.
+    - My heart is broke.
 
 - intent: bot_challenge
   examples: |

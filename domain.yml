@@ -15,10 +15,12 @@ intents:
   - evening
   - appriciation
   - out_of_scope
+  - introduce_botself
   - bot_challenge
 
 entities:
   - time
+  - headache
 
 actions:
   - action_custom_fallback
@@ -79,6 +81,9 @@ responses:
   utter_tension_headache_for_more_sleep:
   - text: "Don't worry! You are feeling released after stessful time. Don't sleep too much. If you want, you can take Paracetamol."
 
+  utter_goto_doc_asap:
+  - text: "Go to a doctor as soon as possible."
+
 
 # fever
   utter_fever_how_long:
@@ -115,14 +120,19 @@ responses:
   - text: Sorry I didn't get that. Can you rephrase?
 
   utter_out_of_scope:
-  - text: Sorry, I can't handle that request.
+  - text: "Sorry, I can't handle that request."
 
   utter_please_rephrase:
-  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
 
 # general
   utter_appriciation_reply:
   - text: "I am created for this. I am just doing my job."
+
+  utter_introduce_botself_reply:
+  - text: "I am a bot created by Abu Bakar Siddik. I am not a substitute for a trained, qualified doctor. 
+  I only have knowledge of common, easy-to-treat illnesses like fever and headaches. I'm also receiving training on other diseases. 
+  You can only think of me as a first aid kit."
 
   utter_goodbye:
   - text: "Take care"

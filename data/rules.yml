@@ -32,6 +32,11 @@ rules:
   - intent: nlu_fallback
   - action: utter_please_rephrase
 
+- rule: anytime user ask introduce_botself reply utter_introduce_botself_reply
+  steps:
+  - intent: introduce_botself
+  - action: utter_introduce_botself_reply
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

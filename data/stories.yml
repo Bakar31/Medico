@@ -2,7 +2,7 @@ version: "3.1"
 
 stories:
 
-- story: headache for less sleep - 1
+- story: greet + sick + headache symptoms + start time + not severe + not nauseous + not enough sleep + appreciation + goodbye
   steps:
   - intent: greet
   - action: utter_greet
@@ -18,10 +18,12 @@ stories:
   - action: utter_enough_sleep
   - intent: deny
   - action: utter_tension_headache_for_less_sleep
+  - intent: appriciation
+  - action: utter_appriciation_reply
   - intent: goodbye
   - action: utter_goodbye
 
-- story: headache-1.1
+- story: sick + headache symptoms + start time + not severe + not nauseous + not enough sleep
   steps:
   - intent: sick
   - action: utter_symptoms
@@ -36,7 +38,7 @@ stories:
   - intent: deny
   - action: utter_tension_headache_for_less_sleep
 
-- story: headache-1.2
+- story: headache symptoms + start time + not severe + not nauseous + not enough sleep
   steps:
   - intent: headache_symptoms
   - action: utter_headache_how_long
@@ -48,6 +50,26 @@ stories:
   - action: utter_enough_sleep
   - intent: deny
   - action: utter_tension_headache_for_less_sleep
+
+- story: headache symptoms + start time + severe + go to doctor
+  steps:
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: affirm
+  - action: utter_goto_doc_asap
+
+- story: headache symptoms + start time + not severe + feel nauseous + go to doctor
+  steps:
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: affirm
+  - action: utter_goto_doc_asap
 
 - story: headache for much sleep and relax - 2
   steps:
