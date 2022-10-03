@@ -79,14 +79,25 @@ responses:
       - title: "No"
         payload: "/deny"
 
+  utter_take_caffeine :
+  - text: "Are you taking much amount of tea, coffee or cola?"
+    buttons:
+      - title: "Yes"
+        payload: "/affirm"
+      - title: "No"
+        payload: "/deny"
+
   utter_severe_headache_definition:
   - text: "Your headache comes on suddenly and is explosive or violent. Your headache is the worst ever, even if you regularly get headaches. You also have slurred speech, a change in vision, problems moving your arms or legs, loss of balance, confusion, or memory loss with your headache. Your headache gets worse over 24 hours."
   
   utter_tension_headache_for_less_sleep:
-  - text: "Don't worry! Get enough sleep you will be all right. If you want, you can take Paracetamol."
+  - text: "Don't worry! Get enough sleep you will be all right. If you want, you can take a Paracetamol."
 
   utter_tension_headache_for_more_sleep:
-  - text: "Don't worry! You are feeling released after stessful time. Don't sleep too much. If you want, you can take Paracetamol."
+  - text: "Don't worry! You are feeling released after stessful time. Don't sleep too much. If you want, you can take a Paracetamol."
+
+  utter_headache_for_caffeine:
+  - text: "These kinds of foods contain lots amount of caffein that causes the headacahe. Don't drink them too much."
 
   utter_goto_doc_asap_with_severe_headache:
   - text: "Severe headache can be complicated. Please go to a doctor as soon as possible."
