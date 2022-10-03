@@ -23,6 +23,41 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
+- story: (greet + sick) + headache symptoms + start time + not severe + not nauseous + not enough sleep
+  steps:
+  - intent: greet+sick
+  - action: utter_symptoms
+  - intent: headache_symptoms
+  - action: utter_headache_how_long
+  - intent: headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: deny
+  - action: utter_tension_headache_for_less_sleep
+
+- story: (greet + sick) + (headache symptoms + start time) + not severe + not nauseous + not enough sleep
+  steps:
+  - intent: greet+sick
+  - action: utter_symptoms
+  - intent: headache_symptoms+headache_start
+  - action: utter_severe_headache
+  - intent: deny
+  - action: utter_feel_nauseous
+  - intent: deny
+  - action: utter_enough_sleep
+  - intent: deny
+  - action: utter_tension_headache_for_less_sleep
+
+- story: (greet + sick) + (headache symptoms + start time + severe) + goto doc asap
+  steps:
+  - intent: greet+sick
+  - action: utter_symptoms
+  - intent: headache_symptoms+headache_start+severe
+  - action: utter_goto_doc_asap_with_severe_headache
+
 - story: sick + headache symptoms + start time + not severe + not nauseous + not enough sleep
   steps:
   - intent: sick
@@ -58,7 +93,8 @@ stories:
   - intent: headache_start
   - action: utter_severe_headache
   - intent: affirm
-  - action: utter_goto_doc_asap
+  - action: utter_severe_headache_definition
+  - action: utter_goto_doc_asap_with_severe_headache
 
 - story: headache symptoms + start time + not severe + feel nauseous + go to doctor
   steps:
@@ -69,7 +105,7 @@ stories:
   - intent: deny
   - action: utter_feel_nauseous
   - intent: affirm
-  - action: utter_goto_doc_asap
+  - action: utter_should_goto_doc
 
 - story: greet + sick + headache + start time + not severe + not nauseous + enough sleep + in holiday + sleep lot + tension headache + appreciation + goodbye
   steps:

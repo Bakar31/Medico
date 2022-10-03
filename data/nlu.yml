@@ -1,6 +1,19 @@
 version: "3.1"
 
 nlu:
+- intent: greet+sick
+  examples: |
+    - hello medico! i am not well.
+    - hi! i am sick.
+    - hey! feeling sick.
+    - hey dude. can i get some medical advice?
+    - good morning. I need medical attention
+    - hello. I am unwell
+    - Hi! Feeling unhealty
+    - hello docbot. i am feeling dizzy
+    - hello. I am in pain
+    - hey doctor bot. I am not in good shape
+
 - intent: sick
   examples: |
     - i am not well
@@ -42,6 +55,36 @@ nlu:
     - today
     - today morning
 
+- intent: headache_symptoms+headache_start
+  examples: |
+    - i feel [headache](headache) from [7 am](time)
+    - [pain in the head]headache since [8 am](time)
+    - i feel [headache](headache) for [2 hours](time)
+    - i feel [headache](headache) since [10 pm](time)
+    - [headache](headache) from this morning
+    - [headache](headache) from this evening
+    - [headache](headache) from last night
+    - i feel [headache](headache) from last morning
+    - [head pain](headache) from yesterday
+    - [headache](headache) since today [10 am](time)
+    - [headache](headache) since today [5 pm](time)
+    - [headache](headache) since today morning
+
+- intent: headache_symptoms+headache_start+severe
+  examples: |
+    - i feel [severe](severe) [headache](headache) from [7 am](time)
+    - [severe](severe) [pain in the head](headache) since [8 am](time)
+    - i feel [intense](severe) [headache](headache) for [2 hours](time)
+    - i feel [extreme](severe) [headache](headache) since [10 pm](time)
+    - [major](severe) [headache](headache) from this morning
+    - [seroius](severe) [headache](headache) from this evening
+    - [vigorous](severe) [headache](headache) from last night
+    - i feel [extreme](severe) [headache](headache) from last morning
+    - [intense](severe) [head pain](headache) from yesterday
+    - [seroius](severe) [headache](headache) since today [10 am](time)
+    - [extreme](severe) [headache](headache) since today [5 pm](time)
+    - [severe](severe) [headache](headache) since today morning
+
 # --------------fever----------------
 - intent: fever_symptoms
   examples: |
@@ -54,7 +97,6 @@ nlu:
   examples: |
     - all day
     - all time
-    - 24/7
 
 - intent: evening
   examples: |
